@@ -1,0 +1,98 @@
+﻿<Window x:Class="DTT2021_Round2.Round1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DTT2021_Round2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Round1" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0">
+            <Label FontWeight="DemiBold">PHẦN 1: VƯỢT CHƯỚNG NGẠI VẬT</Label>
+        </Viewbox>
+        <Grid Grid.Row="1" x:Name="grdRound1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" x:Name="grdNo">
+            </Grid>
+            <Grid Grid.Column="2" x:Name="grdDigit">
+            </Grid>
+            <Grid Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Button x:Name="btnTimeAnswer" Grid.Row="0" Click="btnTimeAnswer_Click"
+                  Style="{StaticResource MaterialDesignFloatingActionLightButton}">
+                    <materialDesign:PackIcon
+                    Kind="Alarm"
+                    Height="24"
+                    Width="24" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3" x:Name="grdButton">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnBack" Grid.Column="0"
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    Width="100" Click="btnBack_Click">Back
+            </Button>
+            <Button x:Name="btnBackup" Grid.Column="3" Click="btnBackup_Click"
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    Width="100">Backup
+            </Button>
+
+        </Grid>
+        <Grid Grid.Row="1" x:Name="grdDetailQuestionRound1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" x:Name="tbQuestionDetail" TextWrapping="Wrap" FontSize="50" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1"  x:Name="grdRound1_DigitDetail">
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" x:Name="grdTimeRound1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="2">
+                    <MediaElement x:Name="tickSound" LoadedBehavior="Manual"></MediaElement>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
