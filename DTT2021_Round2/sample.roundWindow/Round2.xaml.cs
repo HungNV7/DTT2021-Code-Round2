@@ -55,7 +55,7 @@ namespace DTT2021_Round2.Window
             Thread thread = new Thread(
                 () =>
                 {
-                    int minute = 1;
+                    int minute = 40;
                     int second = 0;
 
                     while (minute != 0 || second != 0)
