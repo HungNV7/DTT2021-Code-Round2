@@ -81,12 +81,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="sample.roundWindow\Round1.xaml.cs">
+    <Compile Include="RoundWindow\Round1.xaml.cs">
       <DependentUpon>Round1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sample.dtos\Question.cs" />
-    <Compile Include="sample.utils\ReadExcel.cs" />
-    <Compile Include="sample.roundWindow\Round2.xaml.cs">
+    <Compile Include="DTOS\Question.cs" />
+    <Compile Include="Utils\ReadExcel.cs" />
+    <Compile Include="RoundWindow\Round2.xaml.cs">
       <DependentUpon>Round2.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -101,17 +101,17 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="sample.roundWindow\Round1.xaml">
+    <Page Include="RoundWindow\Round1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="sample.roundWindow\Round2.xaml">
+    <Page Include="RoundWindow\Round2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="sample.utils\MediaAct.cs" />
+    <Compile Include="Utils\MediaAct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
