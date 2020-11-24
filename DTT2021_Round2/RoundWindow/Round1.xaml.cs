@@ -312,6 +312,7 @@ namespace DTT2021_Round2
             InitDigitAnswer(listBUQuestion);
             currentListQuestion = listBUQuestion;
             grdRound1.Visibility = Visibility.Visible;
+            grdButton.Visibility = Visibility.Visible;
         }
 
         private void btnTimeAnswer_Click(object sender, RoutedEventArgs e)

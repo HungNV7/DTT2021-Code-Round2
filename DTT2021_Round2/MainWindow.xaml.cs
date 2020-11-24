@@ -51,17 +51,17 @@ namespace DTT2021_Round2
         }
 
         private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            this.Visibility = Visibility.Hidden;
+        {  
             Round1 round1 = new Round1(listQuestion, listBUQuestion, this);
             round1.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;
         }
 
         private void lbRound2_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             Round2 round2 = new Round2(this);
             round2.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;
 
         }
     }

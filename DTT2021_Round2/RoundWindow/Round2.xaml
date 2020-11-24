@@ -13,7 +13,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Viewbox Grid.Row="0">
-            <Label FontWeight="DemiBold">PHẦN 2: TỰ LUẬT NGẮN</Label>
+            <Label FontWeight="DemiBold">PHẦN 2: TỰ LUẬN NGẮN</Label>
         </Viewbox>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -31,6 +31,16 @@
                     <MediaElement x:Name="tickSound" LoadedBehavior="Manual"></MediaElement>
                 </Grid>
             </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnBack" Grid.Column="0"
+                    Style="{StaticResource MaterialDesignRaisedLightButton}" Click="btnBack_Click"  Width="100">Back
+            </Button>
         </Grid>
     </Grid>
 </Window>

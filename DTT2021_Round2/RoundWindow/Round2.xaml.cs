@@ -87,5 +87,11 @@ namespace DTT2021_Round2.Window
                 );
             thread.Start();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;  
+        }
     }
 }
