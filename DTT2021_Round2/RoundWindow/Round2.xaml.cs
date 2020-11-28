@@ -25,6 +25,9 @@ namespace DTT2021_Round2.Window
         public Round2()
         {
             InitializeComponent();
+            ImageBrush background = new ImageBrush();
+            MediaAct.Instance.Upload(background, "background.png");
+            this.Background = background;
         }
 
         public Round2(MainWindow mainWindow):this()
@@ -85,6 +88,7 @@ namespace DTT2021_Round2.Window
                 }
 
                 );
+            thread.IsBackground = true;
             thread.Start();
         }
 

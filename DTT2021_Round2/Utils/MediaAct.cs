@@ -26,8 +26,8 @@ namespace DTT2021_Round2
             try
             {
                 String path = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-                path = Path.GetDirectoryName(path);
-                path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
                 path += @"\Resources\" + fileName;
 
                 media.Source = new Uri(path);
@@ -46,8 +46,8 @@ namespace DTT2021_Round2
                 logo.BeginInit();
 
                 String path = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-                path = Path.GetDirectoryName(path);
-                path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
                 path += @"\Resources\" + fileName;
                 logo.UriSource = new Uri(path);
                 logo.EndInit();
@@ -68,8 +68,8 @@ namespace DTT2021_Round2
                 logo.BeginInit();
 
                 String path = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-                path = Path.GetDirectoryName(path);
-                path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
+                //path = Path.GetDirectoryName(path);
                 path += @"\Resources\" + fileName;
                 logo.UriSource = new Uri(path);
                 logo.EndInit();

@@ -60,11 +60,11 @@
         </Grid>
         <Grid Grid.Row="1" x:Name="grdDetailQuestionRound1">
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="2.5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
@@ -72,8 +72,8 @@
                     <ColumnDefinition Width="5*"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="1" x:Name="tbQuestionDetail" TextWrapping="Wrap" FontSize="50" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
-            </Grid>
+                <TextBlock Grid.Column="1" x:Name="tbQuestionDetail" TextWrapping="Wrap" FontSize="60" HorizontalAlignment="Center" TextAlignment="Center" FontWeight="DemiBold"></TextBlock>
+                </Grid>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>

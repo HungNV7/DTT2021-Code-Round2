@@ -39,6 +39,9 @@ namespace DTT2021_Round2
             this.listQuestion = listQuestion;
             this.listBUQuestion = listBUQuestion;
             this.mainWindow = mainWindow;
+            ImageBrush background = new ImageBrush();
+            MediaAct.Instance.Upload(background, "background.png");
+            this.Background = background;
             currentListQuestion = listQuestion;
             HiddenAllGrid();
             grdRound1.Visibility = Visibility.Visible;
@@ -220,6 +223,7 @@ namespace DTT2021_Round2
                 }
                    
                 );
+            thread.IsBackground = true;
             thread.Start();
         }
 
@@ -279,6 +283,7 @@ namespace DTT2021_Round2
                     });
                 }
                 );
+            thread.IsBackground = true;
             thread.Start();
         }
 

@@ -24,8 +24,8 @@ namespace DTT2021_Round2
         public string GetPath()
         {
             string path = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-            path = System.IO.Path.GetDirectoryName(path);
-            path = System.IO.Path.GetDirectoryName(path);
+            //path = System.IO.Path.GetDirectoryName(path);
+            //path = System.IO.Path.GetDirectoryName(path);
             path += @"\Resources\";
 
             OpenFileDialog openDialog = new OpenFileDialog();
